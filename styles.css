@@ -1,0 +1,174 @@
+body,
+dl,
+dd {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: #b3bcc5;
+  font-size: 14px;
+}
+html,
+body,
+.wrapper {
+  height: 100%;
+  min-width: 700px;
+}
+.wrapper {
+}
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+.header .logo {
+  padding-left: 20px;
+  height: 70px;
+  line-height: 70px;
+}
+.header .logo img {
+  height: 40px;
+  vertical-align: middle;
+}
+.content {
+  position: absolute;
+  width: 100%;
+}
+.leftMenu {
+  float: left;
+  width: 197px;
+  height: calc(100% - 73px);
+  border-top: #85754d solid 3px;
+  border-right: #85754d solid 3px;
+}
+.leftMenu dl dt {
+  color: #85754d;
+  margin-left: 8px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+}
+.leftMenu dl dd {
+  color: #85754d;
+  line-height: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding-left: 30px;
+}
+.leftMenu dl dd.active {
+  background-color: #f0ede3;
+}
+.leftMenu dl dd:hover {
+  background-color: #4b2e83;
+}
+.rightContent {
+  float: right;
+  width: calc(100% - 200px);
+  min-width: 500px;
+  height: calc(100% - 73px);
+  border-top: 3px solid #85754d;
+  position: relative;
+}
+.addStudent {
+  display: none;
+}
+
+form {
+  width: 400px;
+  margin: 50px auto;
+}
+form label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;
+  color: #000;
+  font-size: 16px;
+}
+form label.labelSex {
+  width: 20px;
+  text-align: left;
+}
+form div {
+  margin: 10px 0;
+}
+
+form .btn {
+  padding: 5px 20px;
+}
+.studentList{
+  display: none;
+}
+.studentList table {
+  width: 100%;
+}
+.studentList table thead {
+  background-color: #b7a57a;
+  color: #404040;
+  font-size: 14px;
+}
+.studentList table tbody {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+.studentList table tr {
+  height: 30px;
+  line-height: 30px;
+}
+.studentList table .btn {
+  padding: 3px 10px;
+  color: white;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.studentList table .btn.edit {
+  background-color: #5cb85c;
+}
+.studentList table .btn.delete {
+  background-color: #d9534f;
+}
+.studentList table .btn.edit:hover {
+  background-color: #398439;
+}
+.studentList table .btn.delete:hover {
+  background-color: #c9302c;
+}
+.studentList .model {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+.studentList .model .mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.studentList .modelContent {
+  background-color: white;
+  width: 450px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -225px;
+}
+.studentList .modelContent h3 {
+  color: black;
+  padding-left: 20px;
+}
+.studentList .modelContent form {
+  margin-top: 10px;
+}
+.content-active {
+  display: block;
+}
